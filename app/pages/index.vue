@@ -158,11 +158,10 @@
             <p class="plan-summary">Cocok untuk pemula yang ingin mencoba pencatatan dasar gizi harian.</p>
             <ul class="plan-features">
               <li>✔️ Target Kalori & Makro Nutrisi Harian</li>
-              <li>✔️ Calorie Tracker & Water Battery</li>
+              <li>✔️ Calorie & Nutrisi Tracker</li>
               <li>❌ Batasan 2x Scan Gemini AI Per Hari</li>
               <li>❌ Batasan 5x Cari Groq AI Per Hari</li>
               <li>❌ Harus Menonton Iklan 15 Detik</li>
-              <li>❌ Tanpa Fitur Pemantauan Orang Tua</li>
             </ul>
             <button class="btn-secondary btn-pricing" disabled>Aktif Secara Bawaan</button>
           </div>
@@ -175,12 +174,10 @@
             <p class="plan-summary text-white-mute">Akses tanpa batas dan hilangkan iklan untuk pengalaman hidup sehat maksimal!</p>
             <ul class="plan-features text-white-list">
               <li>✔️ Target Kalori & Makro Nutrisi Harian</li>
-              <li>✔️ Calorie Tracker & Water Battery</li>
+              <li>✔️ Calorie & Nutrisi Tracker</li>
               <li>✔️ Scan Gemini AI TANPA BATAS Harian</li>
               <li>✔️ Cari Groq AI TANPA BATAS Harian</li>
               <li>✔️ BEBAS IKLAN 100% (No Interruptions)</li>
-              <li>✔️ Akses Fitur Pemantauan Orang Tua</li>
-              <li>✔️ Layanan Bantuan Prioritas</li>
             </ul>
             <a href="#demo" class="btn-primary btn-pricing gold-btn">Upgrade Sekarang</a>
           </div>
