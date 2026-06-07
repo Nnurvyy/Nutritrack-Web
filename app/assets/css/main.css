@@ -1,0 +1,204 @@
+:root {
+  /* Colors */
+  --primary: #2e7d32;
+  --primary-dark: #1b5e20;
+  --primary-light: #4caf50;
+  --primary-lighter: #e8f5e9;
+  --accent: #ffa000;
+  --accent-light: #fff8e1;
+  --bg-light: #f4faf4;
+  --surface: #ffffff;
+  --text-main: #1a2e1a;
+  --text-sub: #5a7a5a;
+  --border: #c8e6c9;
+  --shadow-color: rgba(46, 125, 50, 0.06);
+  --shadow-hover: rgba(46, 125, 50, 0.12);
+
+  /* Nutrients */
+  --protein: #ef5350;
+  --protein-bg: #ffebee;
+  --carbs: #42a5f5;
+  --carbs-bg: #e3f2fd;
+  --fat: #ffa726;
+  --fat-bg: #fff3e0;
+  --water: #26c6da;
+  --water-bg: #e0f7fa;
+
+  /* Typography */
+  --font-main: 'Poppins', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-main);
+  font-weight: 800;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-light);
+}
+
+/* Rounded Kawaii Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 20px;
+  border: 3px solid var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-light);
+}
+
+/* Cute Buttons & Interactive Elements */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px var(--shadow-hover);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-primary:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(46, 125, 50, 0.2);
+  background-color: var(--primary-light);
+}
+
+.btn-primary:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: white;
+  color: var(--primary);
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 2px solid var(--border);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-4px);
+  background-color: var(--primary-lighter);
+  border-color: var(--primary);
+}
+
+.btn-secondary:active {
+  transform: translateY(-1px);
+}
+
+/* Kawaii Cards */
+.kawaii-card {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 8px 16px var(--shadow-color);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.kawaii-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px var(--shadow-hover);
+  border-color: var(--primary-light);
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes scan-line {
+  0% { top: 0%; }
+  50% { top: 100%; }
+  100% { top: 0%; }
+}
+
+@keyframes wave-animation {
+  0% { transform: translateX(0) translateZ(0) scaleY(1); }
+  50% { transform: translateX(-25%) translateZ(0) scaleY(0.85); }
+  100% { transform: translateX(-50%) translateZ(0) scaleY(1); }
+}
+
+@keyframes pulse-soft {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+/* Utility Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 48px 0;
+  }
+}
