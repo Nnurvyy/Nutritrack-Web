@@ -61,6 +61,21 @@ Metode ini otomatis mendeploy ulang setiap kali Anda melakukan `git push` ke rep
 4. **Klik Save and Deploy**:
    Cloudflare akan mengambil kode Anda, menjalankan proses build, dan merilis situs Anda secara langsung dalam 1-2 menit.
 
+### 🔍 Solusi Error: Output Directory ".output/public" Not Found
+Jika Anda mengalami kegagalan deployment dengan pesan error `Output directory ".output/public" not found`, hal ini disebabkan karena Cloudflare secara default menggunakan perintah build `npm run build` yang memicu Nitro mem-build preset `cloudflare-pages` dan meletakkan outputnya di direktori `dist`.
+
+Untuk memperbaikinya, masuk ke **Dashboard Cloudflare Pages** -> Proyek Anda -> **Settings** -> **Build & deployments** -> **Configure Production build settings**:
+
+* **Pilihan 1: Jika ingin menggunakan Pure Static (SSG) - Rekomendasi 🚀**
+  - **Build command**: Ubah dari `npm run build` menjadi `npm run generate`
+  - **Build output directory**: Tetap `.output/public`
+  
+* **Pilihan 2: Jika ingin menggunakan SSR (Serverless Worker)**
+  - **Build command**: Tetap `npm run build`
+  - **Build output directory**: Ubah dari `.output/public` menjadi `dist`
+
+Setelah memperbarui pengaturan di atas, klik **Save** lalu lakukan **Retry deployment** atau push commit baru.
+
 ---
 
 ### Metode B: Deploy Manual via Wrangler CLI (Tanpa Git)
