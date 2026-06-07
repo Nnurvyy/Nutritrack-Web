@@ -159,6 +159,9 @@
             <ul class="plan-features">
               <li>✔️ Target Kalori & Makro Nutrisi Harian</li>
               <li>✔️ Calorie & Nutrisi Tracker</li>
+              <li>✔️ Scan dengan Yolo</li>
+              <li>✔️ Scan Tabel Informasi Nilai gizi</li>
+              <li>✔️ Lihat Progress Harian</li>
               <li>❌ Batasan 2x Scan Gemini AI Per Hari</li>
               <li>❌ Batasan 5x Cari Groq AI Per Hari</li>
               <li>❌ Harus Menonton Iklan 15 Detik</li>
@@ -175,6 +178,9 @@
             <ul class="plan-features text-white-list">
               <li>✔️ Target Kalori & Makro Nutrisi Harian</li>
               <li>✔️ Calorie & Nutrisi Tracker</li>
+              <li>✔️ Scan dengan Yolo</li>
+              <li>✔️ Scan Tabel Informasi Nilai gizi</li>
+              <li>✔️ Lihat Progress Harian</li>
               <li>✔️ Scan Gemini AI TANPA BATAS Harian</li>
               <li>✔️ Cari Groq AI TANPA BATAS Harian</li>
               <li>✔️ BEBAS IKLAN 100% (No Interruptions)</li>
